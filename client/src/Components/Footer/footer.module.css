@@ -1,0 +1,104 @@
+.footer {
+  background-color: #2c3e50;
+  padding: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -100px;
+}
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.socialIcons i {
+  font-size: 24px;
+  margin: 20px;
+  color: white;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s; /* Smooth transition for all effects */
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.socialIcons i:hover,
+.socialIcons i:focus {
+  background-color: whitesmoke; 
+  color: #007bff; 
+  transform: scale(1.2); /* Scale the icon size on hover */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional shadow for focus */
+  border-color: whitesmoke; /* Change the border color to match the background */
+}
+
+.usefulLinks,
+.contactInfo {
+  text-align: left;
+}
+
+.usefulLinks ul {
+  list-style: none;
+  padding: 0;
+}
+.usefulLinks h4{
+padding-bottom: 10px;
+}
+.usefulLinks li {
+  margin-bottom: 10px;
+}
+
+.usefulLinks a,
+.contactInfo a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.usefulLinks a:hover,
+.usefulLinks a:focus,
+.contactInfo a:hover,
+.contactInfo a:focus {
+  color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Shadow for focus */
+}
+.contactInfo p{
+  padding: 5px;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .logoSection {
+    margin-bottom: 30px; /* Space between logo and other sections */
+  }
+
+  .usefulLinks,
+  .contactInfo {
+    text-align: center; /* Center text for smaller screens */
+    margin-bottom: 15px; /* Add spacing below sections */
+    flex: 1 1 100%; /* Allow these sections to take full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .socialIcons i {
+    font-size: 20px; /* Reduce icon size for smaller screens */
+  }
+
+  .logo {
+    width: 120px; /* Reduce logo size for smaller screens */
+  }
+}

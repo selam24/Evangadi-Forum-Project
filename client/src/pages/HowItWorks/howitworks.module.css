@@ -1,0 +1,17 @@
+.HowItWorks__container {
+    width: 80%;
+    padding: 20px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.HowItWorks__container h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.HowItWorks__container p {
+    padding: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
